@@ -1,12 +1,12 @@
 {
     "name": "sparkworld/kopokopoke-laravel",
     "description": "A simple package for developers to consume Kopokopo Mpesa API in Laravel 9",
-    "homepage": "https://github.com/Sparkworld-Enterprises/kopokopo-laravel",
+    "homepage": "https://github/michaelgatuma/laravel-kopokopo",
     "keywords": [
         "kopokopo",
         "mpesa",
         "laravel",
-        "sparkworld"
+        "michaelgatuma"
     ],
     "type": "laravel",
     "license": "MIT",
@@ -14,35 +14,35 @@
     "prefer-stable" : true,
     "authors": [
         {
-            "name": "sparkworld",
-            "email": "sparkworldke@gmail.com"
+            "name": "Michael Gatuma",
+            "email": "mgates4410@gmail.com"
         }
     ],
     "require": {
         "laravel/framework": ">=8.0",
         "guzzlehttp/guzzle": "^7.1",
-        "php": "^8.0"
+        "php": ">=8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.3.3"
     },
     "autoload": {
         "psr-4": {
-            "Sparkworldke\\Kopokopo\\": "src/"
+            "Michaelgatuma\\Kopokopo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sparkworldke\\Kopokopo\\Tests\\": "tests"
+            "Michaelgatuma\\Kopokopo\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sparkworldke\\Kopokopo\\KopokopoServiceProvider"
+                "Michaelgatuma\\Kopokopo\\KopokopoServiceProvider"
             ],
             "aliases": {
-                "Kopokopo": "Sparkworldke\\Kopokopo\\Facades\\Kopokopo"
+                "Kopokopo": "Michaelgatuma\\Kopokopo\\Facades\\Kopokopo"
             }
         }
     }

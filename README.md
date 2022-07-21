@@ -1,13 +1,13 @@
 # Laravel Kopokopo Package
 
-A simple package for laravel developers to consume Kopokopo API for laravel 9. extension of https://github.com/michaelgatuma/laravel-kopokopo
+A simple package for laravel developers to consume Kopokopo API for laravel 8+ extension of https://github.com/michaelgatuma/laravel-kopokopo.
 
 ## Installation
 
 You can easily install this package using composer and an installation command
 
 ```sh
-composer require sparkworld/kopokopo-laravel
+composer require sparkworld/kopokopoke-laravel
 ```
 
 ## Configuration
@@ -213,8 +213,6 @@ if($create_recipient_response['status'] == 'success')
     echo "The resource location is:" . json_encode($create_recipient_response['location']);
 }
 ```
-
-Extension of https://github.com/michaelgatuma/laravel-kopokopo
 
 A HTTP response code of 201 is returned upon successful creation of the PAY recipient. The URL of the recipient resource
 is also returned in the HTTP Location Header
