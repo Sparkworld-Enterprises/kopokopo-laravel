@@ -1,0 +1,50 @@
+{
+    "name": "sparkworld/kopokopo-laravel",
+    "description": "A simple package for developers to consume Kopokopo Mpesa API in Laravel 9",
+    "homepage": "https://github.com/Sparkworld-Enterprises/kopokopo-laravel",
+    "keywords": [
+        "kopokopo",
+        "mpesa",
+        "laravel",
+        "sparkworld"
+    ],
+    "type": "laravel",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "authors": [
+        {
+            "name": "sparkworld",
+            "email": "sparkworldke@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=8.0",
+        "guzzlehttp/guzzle": "^7.1",
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sparkworldke\\Kopokopo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sparkworldke\\Kopokopo\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sparkworldke\\Kopokopo\\KopokopoServiceProvider"
+            ],
+            "aliases": {
+                "Kopokopo": "Sparkworldke\\Kopokopo\\Facades\\Kopokopo"
+            }
+        }
+    }
+
+}
