@@ -1,6 +1,6 @@
 # Laravel Kopokopo Package
 
-A simple package for laravel developers to consume Kopokopo API for laravel 8.
+A simple package for laravel developers to consume Kopokopo API for laravel 9. extension of https://github.com/michaelgatuma/laravel-kopokopo
 
 ## Installation
 
